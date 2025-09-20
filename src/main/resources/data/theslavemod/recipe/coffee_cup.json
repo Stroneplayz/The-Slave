@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:cocoa_beans"
+    },
+    "B": {
+      "item": "minecraft:sugar"
+    },
+    "C": {
+      "item": "minecraft:milk_bucket"
+    },
+    "D": {
+      "item": "minecraft:glass_bottle"
+    }
+  },
+  "pattern": [
+    "CBC",
+    "ADA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "theslavemod:coffee_cup"
+  }
+}

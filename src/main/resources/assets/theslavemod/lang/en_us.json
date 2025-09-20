@@ -1,8 +1,11 @@
 {
-  "item.theslavemod.coffee_cup": "Coffe Cup",
+  "item.theslavemod.coffee_cup": "Coffee Cup",
   "item.theslavemod.string_of_fate": "String Of Fate",
 
   "block.theslavemod.ebony_dirt": "Ebony Dirt",
   "block.theslavemod.ebony_sand": "Ebony Sand",
-  "block.theslavemod.ebony_grass": "Ebony Grass"
+  "block.theslavemod.ebony_grass": "Ebony Grass",
+
+  "creativetab.theslavemod.weapons": "Weapons",
+  "creativetab.theslavemod.dreamrealm_nature": "DreamRealm's Nature"
 }
