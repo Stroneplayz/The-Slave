@@ -1,5 +1,6 @@
 package net.stronegamez.the_slave;
 
+import net.stronegamez.the_slave.block.ModBlocks;
 import net.stronegamez.the_slave.item.ModItems;
 import org.slf4j.Logger;
 
@@ -51,6 +52,7 @@ public class TheSlaveMod {
         NeoForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -71,6 +73,16 @@ public class TheSlaveMod {
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.STRING_OF_FATE);
         }
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.EBONY_DIRT);
+        }
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.EBONY_GRASS);
+        }
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.EBONY_SAND);
+        }
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

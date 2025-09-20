@@ -1,4 +1,8 @@
 {
   "item.theslavemod.coffee_cup": "Coffe Cup",
-  "item.theslavemod.string_of_fate": "String Of Fate"
+  "item.theslavemod.string_of_fate": "String Of Fate",
+
+  "block.theslavemod.ebony_dirt": "Ebony Dirt",
+  "block.theslavemod.ebony_sand": "Ebony Sand",
+  "block.theslavemod.ebony_grass": "Ebony Grass"
 }
