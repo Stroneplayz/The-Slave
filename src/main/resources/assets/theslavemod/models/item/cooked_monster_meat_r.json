@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "theslavemod:item/cooked_monster_meat_r"
+  }
+}

@@ -9,6 +9,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.stronegamez.the_slave.TheSlaveMod;
+import net.stronegamez.the_slave.block.custom.Soul_Devouring_Soil;
 import net.stronegamez.the_slave.item.ModItems;
 
 import java.util.function.Supplier;
@@ -28,6 +29,10 @@ public class ModBlocks {
     public static final DeferredBlock<Block> EBONY_SAND = registerBlock("ebony_sand",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(0.8f).sound(SoundType.SOUL_SAND)));
+
+    public static final DeferredBlock<Block> SOUL_DEVOURING_SOIL = registerBlock("soul_devouring_soil",
+            () -> new Soul_Devouring_Soil(BlockBehaviour.Properties.of()
+                    .strength(0.8f).sound(SoundType.SOUL_SOIL)));
 
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){

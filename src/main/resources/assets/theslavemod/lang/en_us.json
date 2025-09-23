@@ -1,11 +1,34 @@
 {
-  "item.theslavemod.coffee_cup": "Coffee Cup",
+  "item.theslavemod.soul_shard": "Soul Shard",
   "item.theslavemod.string_of_fate": "String Of Fate",
+  "item.theslavemod.transmitter": "Transmitter",
+
+  "item.theslavemod.coffee_cup": "Coffee Cup",
+  "item.theslavemod.black_monster_meat_p": "Pure Rotten Nightmare Meat",
+  "item.theslavemod.cooked_monster_meat": "Cooked Nightmare Meat",
+  "item.theslavemod.monster_meat": "Nightmare Meat",
+  "item.theslavemod.monster_meat_p": "Nightmare Meat",
+  "item.theslavemod.cooked_monster_meat_p": "Cooked Nightmare Meat",
+  "item.theslavemod.monster_meat_r": "Slightly Rotten Nightmare Meat",
+  "item.theslavemod.cooked_monster_meat_r": "Partially Cooked Rotten Nightmare Meat",
+  "item.theslavemod.monster_meat_x": "Slightly Rotten Nightmare Meat",
+  "item.theslavemod.cooked_monster_meat_x": "Rotten Nightmare Meat",
+  "item.theslavemod.rotten_monster_meat": "Rotten Nightmare Meat",
+  "item.theslavemod.rotten_monster_meat_p": "Rotten Nightmare Meat",
+  "item.theslavemod.whiteandblack_meat": "...",
+  "item.theslavemod.meat": "Pure Rotten Nightmare Meat",
+  "item.theslavemod.meat_x": "Pure Rotten...ew",
+
+
+
 
   "block.theslavemod.ebony_dirt": "Ebony Dirt",
   "block.theslavemod.ebony_sand": "Ebony Sand",
   "block.theslavemod.ebony_grass": "Ebony Grass",
+  "block.theslavemod.soul_devouring_soil": "Soul Devouring Soil",
+
 
   "creativetab.theslavemod.weapons": "Weapons",
-  "creativetab.theslavemod.dreamrealm_nature": "DreamRealm's Nature"
+  "creativetab.theslavemod.armed_forces": "Armed Forces",
+  "creativetab.theslavemod.dreamrealm": "DreamRealm"
 }

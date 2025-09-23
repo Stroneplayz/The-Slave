@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 500,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "theslavemod:monster_meat_r"
+  },
+  "result": {
+    "id": "theslavemod:cooked_monster_meat_r"
+  }
+}

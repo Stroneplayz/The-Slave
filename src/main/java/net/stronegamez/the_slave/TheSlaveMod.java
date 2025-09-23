@@ -72,8 +72,23 @@ public class TheSlaveMod {
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
             event.accept(ModItems.COFFEE_CUP);
         }
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.COOKED_MONSTER_MEAT);
+        }
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.COOKED_MONSTER_MEAT_P);
+        }
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.COOKED_MONSTER_MEAT_R);
+        }
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.COOKED_MONSTER_MEAT_X);
+        }
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.STRING_OF_FATE);
+        }
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(ModBlocks.SOUL_DEVOURING_SOIL);
         }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.EBONY_DIRT);
@@ -84,7 +99,6 @@ public class TheSlaveMod {
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
             event.accept(ModBlocks.EBONY_SAND);
         }
-
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
