@@ -1,26 +1,16 @@
 package net.stronegamez.the_slave.item.custom;
 
-import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.context.UseOnContext;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.Block;
-import net.stronegamez.the_slave.item.ModItems;
 
-import javax.annotation.Nullable;
+import java.util.List;
 
 public class TransmitterItem extends Item {
 
@@ -47,5 +37,12 @@ public class TransmitterItem extends Item {
         }
 
         return InteractionResultHolder.success(clickedItem);
+
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        tooltipComponents.add(Component.translatable("tooltip.theslavemod.transmitter"));
+        super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
     }
 }

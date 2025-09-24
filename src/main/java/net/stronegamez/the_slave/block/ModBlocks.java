@@ -34,6 +34,18 @@ public class ModBlocks {
             () -> new Soul_Devouring_Soil(BlockBehaviour.Properties.of()
                     .strength(0.8f).sound(SoundType.SOUL_SOIL)));
 
+    public static final DeferredBlock<Block> TITANIUM_ORE = registerBlock("titanium_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(5.0f).sound(SoundType.METAL)));
+
+    public static final DeferredBlock<Block> TITANIUM_BLOCK = registerBlock("titanium_block",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4.0f).sound(SoundType.METAL)));
+
+    public static final DeferredBlock<Block> DEEPSLATE_TITANIUM_ORE = registerBlock("deepslate_titanium_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(4.0f).sound(SoundType.METAL)));
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

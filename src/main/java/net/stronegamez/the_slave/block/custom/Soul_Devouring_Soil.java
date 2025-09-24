@@ -8,9 +8,6 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import org.checkerframework.checker.units.qual.N;
-
-import javax.annotation.Nullable;
 
 public class Soul_Devouring_Soil extends Block {
     public Soul_Devouring_Soil(Properties properties) {

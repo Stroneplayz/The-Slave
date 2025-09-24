@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "top": "theslavemod:block/ebony_grass_top",
-    "bottom": "theslavemod:block/ebony_dirt",
-    "side": "theslavemod:block/ebony_grass"
-  }
-}

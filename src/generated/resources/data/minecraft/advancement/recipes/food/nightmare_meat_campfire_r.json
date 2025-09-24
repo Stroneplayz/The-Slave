@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nightmare_r": {
+      "conditions": {
+        "items": [
+          {
+            "items": "theslavemod:cooked_monster_meat_r"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:nightmare_meat_campfire_r"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_nightmare_r"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:nightmare_meat_campfire_r"
+    ]
+  }
+}

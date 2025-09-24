@@ -1,37 +1,20 @@
 package net.stronegamez.the_slave;
 
-import net.stronegamez.the_slave.block.ModBlocks;
-import net.stronegamez.the_slave.item.ModCreativeModTabs;
-import net.stronegamez.the_slave.item.ModItems;
-import org.slf4j.Logger;
-
 import com.mojang.logging.LogUtils;
-
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.core.registries.Registries;
-import net.minecraft.network.chat.Component;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.material.MapColor;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
-import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
-import net.neoforged.neoforge.registries.DeferredBlock;
-import net.neoforged.neoforge.registries.DeferredHolder;
-import net.neoforged.neoforge.registries.DeferredItem;
-import net.neoforged.neoforge.registries.DeferredRegister;
+import net.stronegamez.the_slave.block.ModBlocks;
+import net.stronegamez.the_slave.item.ModCreativeModTabs;
+import net.stronegamez.the_slave.item.ModItems;
+import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(TheSlaveMod.MOD_ID)
@@ -69,35 +52,15 @@ public class TheSlaveMod {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.COFFEE_CUP);
-        }
-        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.COOKED_MONSTER_MEAT);
-        }
-        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.COOKED_MONSTER_MEAT_P);
-        }
-        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.COOKED_MONSTER_MEAT_R);
-        }
-        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
-            event.accept(ModItems.COOKED_MONSTER_MEAT_X);
-        }
-        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(ModItems.STRING_OF_FATE);
-        }
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(ModBlocks.SOUL_DEVOURING_SOIL);
+                event.accept(ModBlocks.TITANIUM_ORE);
+                event.accept(ModBlocks.DEEPSLATE_TITANIUM_ORE);
         }
-        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(ModBlocks.EBONY_DIRT);
-        }
-        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(ModBlocks.EBONY_GRASS);
-        }
-        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
-            event.accept(ModBlocks.EBONY_SAND);
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+                event.accept(ModItems.RAW_TITANIUM_INGOT);
+                event.accept(ModItems.TITANIUM_INGOT);
+                event.accept(ModItems.TITANIUM_NUGGET);
+                event.accept(ModBlocks.TITANIUM_BLOCK);
         }
     }
 

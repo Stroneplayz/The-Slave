@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 125,
+  "experience": 0.3,
+  "ingredient": {
+    "item": "theslavemod:monster_meat"
+  },
+  "result": {
+    "count": 1,
+    "id": "theslavemod:cooked_monster_meat"
+  }
+}

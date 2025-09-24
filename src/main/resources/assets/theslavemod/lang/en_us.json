@@ -2,6 +2,9 @@
   "item.theslavemod.soul_shard": "Soul Shard",
   "item.theslavemod.string_of_fate": "String Of Fate",
   "item.theslavemod.transmitter": "Transmitter",
+  "item.theslavemod.titanium_ingot": "Titanium Ingot",
+  "item.theslavemod.raw_titanium_ingot": "Raw Titanium Ingot",
+  "item.theslavemod.titanium_nugget": "Titanium Nugget",
 
   "item.theslavemod.coffee_cup": "Coffee Cup",
   "item.theslavemod.black_monster_meat_p": "Pure Rotten Nightmare Meat",
@@ -19,10 +22,16 @@
   "item.theslavemod.meat": "Pure Rotten Nightmare Meat",
   "item.theslavemod.meat_x": "Pure Rotten...ew",
 
-
+  "tooltip.theslavemod.soul_shard_shift_down": "The remains of a shattered soul absorb(§eRight-click§r) it and gain its fragmented power",
+  "tooltip.theslavemod.soul_shard": "Press §eShift§r for more information",
+  "tooltip.theslavemod.transmitter": "A valuable helper in the overworld",
+  "tooltip.theslavemod.string_of_fate": "A weaving of sorts?",
 
 
   "block.theslavemod.ebony_dirt": "Ebony Dirt",
+  "block.theslavemod.titanium_ore": "Titanium Ore",
+  "block.theslavemod.titanium_block": "Titanium Block",
+  "block.theslavemod.deepslate_titanium_ore": "Deepslate Titanium Ore",
   "block.theslavemod.ebony_sand": "Ebony Sand",
   "block.theslavemod.ebony_grass": "Ebony Grass",
   "block.theslavemod.soul_devouring_soil": "Soul Devouring Soil",

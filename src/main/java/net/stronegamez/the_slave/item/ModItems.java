@@ -1,13 +1,19 @@
 package net.stronegamez.the_slave.item;
 
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.TooltipFlag;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.stronegamez.the_slave.TheSlaveMod;
 import net.stronegamez.the_slave.item.custom.FuelItem;
 import net.stronegamez.the_slave.item.custom.TransmitterItem;
+
+import java.util.List;
 
 public class ModItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TheSlaveMod.MOD_ID);
@@ -61,13 +67,39 @@ public class ModItems {
 
     //ITEMS
     public static final DeferredItem<Item> STRING_OF_FATE = ITEMS.register("string_of_fate",
-            () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)));
+            () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.EPIC)){
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    tooltipComponents.add(Component.translatable("tooltip.theslavemod.string_of_fate"));
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
     public static final DeferredItem<Item> SOUL_SHARD = ITEMS.register("soul_shard",
-            () -> new FuelItem(new Item.Properties().rarity(Rarity.RARE), 45060));
+            () -> new FuelItem(new Item.Properties().rarity(Rarity.RARE), 55000){
+                @Override
+                public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+                    if (Screen.hasShiftDown()) {
+                        tooltipComponents.add(Component.translatable("tooltip.theslavemod.soul_shard_shift_down"));
+                    }
+                    else{
+                        tooltipComponents.add(Component.translatable("tooltip.theslavemod.soul_shard"));
+                    };
+                    super.appendHoverText(stack, context, tooltipComponents, tooltipFlag);
+                }
+            });
 
     public static final DeferredItem<Item> TRANSMITTER = ITEMS.register("transmitter",
             () -> new TransmitterItem(new Item.Properties().stacksTo(1).rarity(Rarity.UNCOMMON)));
+
+    public static final DeferredItem<Item> TITANIUM_INGOT = ITEMS.register("titanium_ingot",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+
+    public static final DeferredItem<Item> RAW_TITANIUM_INGOT = ITEMS.register("raw_titanium_ingot",
+            () -> new Item(new Item.Properties().stacksTo(64)));
+
+    public static final DeferredItem<Item> TITANIUM_NUGGET = ITEMS.register("titanium_nugget",
+            () -> new Item(new Item.Properties().stacksTo(64)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

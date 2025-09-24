@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "theslavemod:monster_meat_x"
+  },
+  "result": {
+    "count": 1,
+    "id": "theslavemod:cooked_monster_meat_x"
+  }
+}
